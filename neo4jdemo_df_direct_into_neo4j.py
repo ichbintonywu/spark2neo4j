@@ -1,8 +1,4 @@
 from pyspark.sql import SparkSession
-import findspark
-import pandas as pd
-import numpy as np
-import os
 
 URI = "neo4j://localhost:11003"
 
