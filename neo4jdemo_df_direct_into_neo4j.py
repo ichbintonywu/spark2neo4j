@@ -4,22 +4,16 @@ import pandas as pd
 import numpy as np
 import os
 
-#spark = SparkSession.builder.appName("test").getOrCreate()
-# sparkSession.createDataFrame([(1, "value1"), (2, "value2")], ["id", "value"]).show()
-#spark.sparkContext.addPyFile("neo4j-connector-apache-spark_2.12-5.0.0_for_spark_3.jar")
-# spark = SparkSession.builder.appName('DF_to_dict').getOrCreate()
-#spark.sparkContext.addPyFile("/Users/tonywu/Documents/dev/spring/testPyspark1/neo4j-connector-apache-spark_2.12-4.0.2_for_spark_3.jar")
 URI = "neo4j://localhost:11003"
-#AUTH = ("neo4j", "Ne04j!")
 
 spark =(SparkSession.builder.master('local[*]')
         .appName('Leverage Neo4j')
 #        .config('spark.ui.port', '4050')
         .config('spark.sql.repl.eagerEval.enabled', True)
-        .config('spark.jars', '/Users/tonywu/Documents/dev/spring/testPyspark1/neo4j-connector-apache-spark_2.12-4.0.2_for_spark_3.jar')
+        .config('spark.jars', 'pathto/neo4j-connector-apache-spark_2.12-4.0.2_for_spark_3.jar')
         .config("neo4j.url", URI).config("neo4j.authentication.type", "basic")
         .config("neo4j.authentication.basic.username", 'neo4j')
-        .config("neo4j.authentication.basic.password", 'Neo4j!').getOrCreate())
+        .config("neo4j.authentication.basic.password", 'password').getOrCreate())
 # Create data in dataframe
 data = [(('Ram'), '1991-04-01', 'M', 3000),
         (('Mike'), '2000-05-19', 'M', 4000),
