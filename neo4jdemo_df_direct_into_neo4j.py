@@ -4,7 +4,6 @@ spark =(SparkSession.builder.master('local[*]')
         .appName('Leverage Neo4j')
         .config('spark.sql.repl.eagerEval.enabled', True)
         .config('spark.jars', 'PathTo/neo4j-connector-apache-spark_2.12-4.0.2_for_spark_3.jar')
-        .config("neo4j.url", URI).config("neo4j.authentication.type", "basic")
         .getOrCreate())
 
 # Create data in dataframe
