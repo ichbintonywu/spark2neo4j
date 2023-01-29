@@ -9,24 +9,6 @@
     <version>1.0-SNAPSHOT</version>
 <dependencies>
     <dependency>
-<!--        <exclusions>-->
-<!--            <exclusion>-->
-<!--                <groupId>io.netty</groupId>-->
-<!--                <artifactId>netty-buffer</artifactId>-->
-<!--            </exclusion>-->
-<!--            <exclusion>-->
-<!--                <groupId>io.netty</groupId>-->
-<!--                <artifactId>netty-common</artifactId>-->
-<!--            </exclusion>-->
-<!--            <exclusion>-->
-<!--                <groupId>io.netty</groupId>-->
-<!--                <artifactId>netty-util</artifactId>-->
-<!--            </exclusion>-->
-<!--            <exclusion>-->
-<!--                <groupId>io.netty</groupId>-->
-<!--                <artifactId>netty-all</artifactId>-->
-<!--            </exclusion>-->
-<!--        </exclusions>-->
         <groupId>org.apache.spark</groupId>
         <artifactId>spark-core_2.12</artifactId>
         <version>3.2.0</version>
@@ -35,7 +17,6 @@
         <groupId>org.apache.spark</groupId>
         <artifactId>spark-mllib_2.12</artifactId>
         <version>3.2.0</version>
-<!--        <scope>provided</scope>-->
     </dependency>
     <dependency>
         <groupId>org.neo4j</groupId>
@@ -43,24 +24,6 @@
         <version>4.0.2_for_spark_3</version>
     </dependency>
     <dependency>
-<!--        <exclusions>-->
-<!--            <exclusion>-->
-<!--                <groupId>io.netty</groupId>-->
-<!--                <artifactId>netty-buffer</artifactId>-->
-<!--            </exclusion>-->
-<!--            <exclusion>-->
-<!--                <groupId>io.netty</groupId>-->
-<!--                <artifactId>netty-common</artifactId>-->
-<!--            </exclusion>-->
-<!--            <exclusion>-->
-<!--                <groupId>io.netty</groupId>-->
-<!--                <artifactId>netty</artifactId>-->
-<!--            </exclusion>-->
-<!--            <exclusion>-->
-<!--                <groupId>io.netty</groupId>-->
-<!--                <artifactId>netty-all</artifactId>-->
-<!--            </exclusion>-->
-<!--        </exclusions>-->
         <groupId>org.apache.spark</groupId>
         <artifactId>spark-sql_2.12</artifactId>
         <version>3.2.0</version>
@@ -70,5 +33,4 @@
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
-
 </project>
