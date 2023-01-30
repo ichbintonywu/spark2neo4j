@@ -5,8 +5,8 @@ from neo4j import GraphDatabase
 import mysql.connector
 import neo4j
 
-URI = "neo4j://localhost:11003"
-AUTH = ("neo4j", "Ne04j!")
+URI = "neo4j://localhost:7687"
+AUTH = ("neo4j", "password")
 BATCH_SIZE = 10000
 
 def create_customer_node(tx, company, firstname, lastname, title):
