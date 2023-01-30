@@ -34,7 +34,7 @@ def transfer_to_neo4j(driver, user_data):
 
 # main block to execute fetch data from RDBMS like MySQL
 mysqlDBconn = mysql.connector.connect(
-    host="localhost", user="root", passwd="Ne04j!", database="northwind")
+    host="localhost", user="root", passwd="password", database="northwind")
 # preparing a cursor object
 cursor = mysqlDBconn.cursor()
 sql = "SELECT * FROM customers"
